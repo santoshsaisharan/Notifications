@@ -16,18 +16,9 @@ function Users({
   image,
   imagePath,
 }) {
-  
   return (
     <div className={`notification ${className}`} key={id}>
-      <img
-        className="avatar"
-        src={process.env.PUBLIC_URL + '/components/images/avatar-angela-gray.webp'}
-        // src={"./images/avatar-angela-gray.webp"}
-        // src={`./images/avatar-${fname}-${lname}.webp`}
-        // src={avatar}
-        // src={`${process.env.PUBLIC_URL}/images/avatar-${fname}-${lname}.webp`}
-        alt={`${fname} ${lname}`}
-      />
+      <img className="avatar" src={avatar} alt={`${fname} ${lname}`} />
       <div className="notification_content">
         <span className="notification_name">
           {fname} {lname}
