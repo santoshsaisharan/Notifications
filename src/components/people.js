@@ -12,6 +12,7 @@ export const people =[
         read: false,
         time: "1m ago",
         image: false,
+        imagePath: ""
     },
     {
         id: 2,
@@ -23,6 +24,7 @@ export const people =[
         read: false,
         time: "5m ago",
         image: false,
+        imagePath: ""
     },
     {
         id: 3,
@@ -34,6 +36,7 @@ export const people =[
         read: false,
         time: "1 day ago",
         image: false,
+        imagePath: ""
     },
     {
         id: 4,
@@ -46,6 +49,7 @@ export const people =[
         read: true,
         time: "5 days ago",
         image: false,
+        imagePath: ""
     },
     {
         id: 5,
@@ -69,6 +73,7 @@ export const people =[
         read: true,
         time: "2 weeks ago",
         image: false,
+        imagePath: ""
     },
     {
         id: 7,
@@ -80,5 +85,6 @@ export const people =[
         read: true,
         time: "2 weeks ago",
         image: false,
+        imagePath: ""
     }
 ]
