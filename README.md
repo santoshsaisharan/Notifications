@@ -14,7 +14,7 @@
 
 ## Overview
 
-This is a challenge to build a notification page and distinuish between the read and unread notifications. Once the user clicks the "Mark all as read" button it should change the unread messages count to zero and update the unread to read layout.
+The goal of this project is to create a notification page that can differentiate between read and unread notifications. One of the main challenges is to implement a feature that updates the unread message count to zero and changes the unread layout to a read layout when the user clicks the "Mark all as read" button. By successfully implementing this feature, users will have a more intuitive and streamlined experience when interacting with the page.
 
 ### The challenge
 
@@ -66,20 +66,22 @@ The chess player image is only required for the commented notification. So the l
 
 ### What I learned
 
-- I have learned how to use the  logical `AND` as a short-circuit operator in real-time. 
-- I have used relative image path in my previous projects however, importing the images from the images folder and then using them as the value of the property in the objects is the first time that I have come across.
-- In the css shown below, I have learned how to remove an element completely conditionally. 
+I have gained experience in using the logical AND as a short-circuit operator in real-time. This technique is useful for evaluating two expressions and returning the first falsey value or the last truthy value. It allows for more concise and efficient code.
+
+In my previous projects, I have used relative image paths. However, in this project, I have imported images from the images folder and used them as the value of the property in the objects for the first time. This approach allowed for better organization of the project and made it easier to manage the images.
+
+The CSS code below shows how to remove an element completely conditionally. I have learned this technique to hide an element without leaving a blank space in the layout. 
 ```css
 .none{
   display: none;
 }
 ```
-- I was able to use the spread operator to select all the users in an array and set their property "read" to true. 
+Lastly, I have learned how to use the spread operator to select all the users in an array and set their property "read" to true. This technique is useful for updating the properties of multiple objects in an array at once, without having to write a loop or use a map function. 
 
 ### Continued development
 
-- I have to focus more different ways we can import the images from the images folder to the components.
-- Continue to learn on more CSS styling. Through which we can display different styles on the elements based on different conditions. 
+- I need to explore more ways to import images from the images folder to the components. This will help me to optimize the loading of images and make the code more organized.
+- I plan to continue learning more CSS styling techniques. With CSS, we can display different styles on elements based on various conditions, which can enhance the user interface and experience. I believe that by continuing to develop my CSS skills, I can create more appealing and engaging designs for future projects.
 
 
 ### Useful resources
