@@ -37,27 +37,24 @@ Users should be able to:
 
 ## My process
 
-- I used the class component for the App.js component as I want to change the state of the component when the "Mark all as read" button is clicked. Whereas the remaining components are functional components as they the pure functions.
+This project contains a notification page that displays a list of users and their notifications. The main components used in this project are the `App.js`, `Head.js`, `Users.js`, and `people.js`.
 
-#### people.js
+### `App.js` Component
+In the `App.js` component, the `class` component is used to allow changing the state of the component when the "Mark all as read" button is clicked. The remaining components are functional components since they are pure functions.
 
-- I created a seperate component called "people.js" to include the list of users as an array of objects. By creating them as an array of objects I will be able to add or remove the users, change the values of the property for a specific user and also use all the array methods for looping through them.
+The `people.js` component is used to store the list of users as an array of objects. This allows for adding or removing users, changing the values of the property for a specific user, and using all the array methods for looping through them.
 
-#### App.js 
-- The App.js component is the parent component of Head.js and Users.js components.
-- I declared markAllRead() function that can be passed on to the Head.js component as prop for using it in the onClick event handler.
-- markAllRead() function loops through the people array and changes the current state of the component and sets the current state of the people to the updatedPeople.
+`App.js` is the parent component of `Head.js` and `Users.js` components. The markAllRead() function is declared in this component and can be passed on to the `Head.js` component as a prop to be used in the `onClick` event handler. The markAllRead() function loops through the `people` array, changes the current state of the component, and sets the current state of the people to the updatedPeople.
 
-#### Head.js 
+### `Head.js` Component
+The `Head.js` component includes the header of the notification page. It receives props (`markRead`, `peopleData`) from the `App.js` component. The `onClick` event handler is assigned to the "Mark all as read" button so that when it is clicked, the `markRead` function is invoked.
 
-- The head.js component includes the header of the notification page. This takes the props(markRead, peopleData) from the App.js. We assign the "onClick" event handler to the "Mark all as read" button so when this is clicked the "markRead" function is envoked.
-- The head.js component also includes the userCount to loop through the peopleData that we received as prop from the App.js and checks if how many users have notifications unread and gives the value. If it is gretaer than zero it populates the number of unread messages in the usercount whereas if it is equals to zero then the div doesn't gets displayed.
+The `Head.js` component also includes the `usercount` to loop through the peopleData that is received as a prop from the `App.js` component. It checks how many users have unread notifications and displays that value in the `usercount` element. If there are no unread messages, the `div` is not displayed.
 
-#### Users.js 
+### `Users.js` Component
+In the `Users.js` component, the properties of the users object in the people array are passed as props from `App.js` to the `people.js` component. The `Users.js` component returns a responsive HTML page based on whether the user is read or unread.
 
-- the properties of the users object in the people array are passed as props from App.js to the people.js component.
-- The User.js component returns a responsive HTML page based on whether the user is read or unread.
-- The chess player image is only required for the commented notification. So I have used the logical AND operator to do a short-circuit evaluation of the image and only insert the <img> if image=== true.
+The chess player image is only required for the commented notification. So the logical `AND` operator is used to do a short-circuit evaluation of the image and only insert it if `image=== true`.
 
 ### Built with
 
@@ -69,7 +66,7 @@ Users should be able to:
 
 ### What I learned
 
-- I have learned how to use the  logical AND as a short-circuit operator in real-time. 
+- I have learned how to use the  logical `AND` as a short-circuit operator in real-time. 
 - I have used relative image path in my previous projects however, importing the images from the images folder and then using them as the value of the property in the objects is the first time that I have come across.
 - In the css shown below, I have learned how to remove an element completely conditionally. 
 ```css
