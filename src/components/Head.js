@@ -14,7 +14,6 @@ function Head({ markRead, peopleData }) {
       </div>
       <div>
         <button onClick={markRead} className="mark">
-          {" "}
           Mark all as read
         </button>
       </div>
