@@ -39,22 +39,21 @@ Users should be able to:
 
 - I used the class component for the App.js component as I want to change the state of the component when the "Mark all as read" button is clicked. Whereas the remaining components are functional components as they the pure functions.
 
-# people.js
+#### people.js
 
 - I created a seperate component called "people.js" to include the list of users as an array of objects. By creating them as an array of objects I will be able to add or remove the users, change the values of the property for a specific user and also use all the array methods for looping through them.
 
-----** App.js **----
-
+#### App.js 
 - The App.js component is the parent component of Head.js and Users.js components.
 - I declared markAllRead() function that can be passed on to the Head.js component as prop for using it in the onClick event handler.
 - markAllRead() function loops through the people array and changes the current state of the component and sets the current state of the people to the updatedPeople.
 
-----** Head.js **----
+#### Head.js 
 
 - The head.js component includes the header of the notification page. This takes the props(markRead, peopleData) from the App.js. We assign the "onClick" event handler to the "Mark all as read" button so when this is clicked the "markRead" function is envoked.
 - The head.js component also includes the userCount to loop through the peopleData that we received as prop from the App.js and checks if how many users have notifications unread and gives the value. If it is gretaer than zero it populates the number of unread messages in the usercount whereas if it is equals to zero then the div doesn't gets displayed.
 
-----** Users.js **----
+#### Users.js 
 
 - the properties of the users object in the people array are passed as props from App.js to the people.js component.
 - The User.js component returns a responsive HTML page based on whether the user is read or unread.
