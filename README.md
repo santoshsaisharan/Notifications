@@ -44,7 +44,7 @@ In the `App.js` component, the `class` component is used to allow changing the s
 
 The `people.js` component is used to store the list of users as an array of objects. This allows for adding or removing users, changing the values of the property for a specific user, and using all the array methods for looping through them.
 
-`App.js` is the parent component of `Head.js` and `Users.js` components. The markAllRead() function is declared in this component and can be passed on to the `Head.js` component as a prop to be used in the `onClick` event handler. The markAllRead() function loops through the `people` array, changes the current state of the component, and sets the current state of the people to the updatedPeople.
+`App.js` is the parent component of `Head.js` and `Users.js` components. The `markAllRead()` function is declared in this component and can be passed on to the `Head.js` component as a prop to be used in the `onClick` event handler. The `markAllRead()` function loops through the `people` array, changes the current state of the component, and sets the current state of the people to the updatedPeople.
 
 ### `Head.js` Component
 The `Head.js` component includes the header of the notification page. It receives props (`markRead`, `peopleData`) from the `App.js` component. The `onClick` event handler is assigned to the "Mark all as read" button so that when it is clicked, the `markRead` function is invoked.
