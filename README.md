@@ -1,15 +1,15 @@
 ## Table of contents
 
-- [Overview]
-- [The challenge]
-- [Screenshot]
-- [Links]
-- [My process]
-- [Built with]
-- [What I learned]
-- [Continued development]
-- [Useful resources]
-- [Author]
+- Overview
+- The challenge
+- Screenshot
+- Links
+- My process
+- Built with
+- What I learned
+- Continued development
+- Useful resources
+- Author
 
 
 ## Overview
@@ -39,7 +39,7 @@ Users should be able to:
 
 - I used the class component for the App.js component as I want to change the state of the component when the "Mark all as read" button is clicked. Whereas the remaining components are functional components as they the pure functions.
 
-----** people.js **----
+#people.js
 
 - I created a seperate component called "people.js" to include the list of users as an array of objects. By creating them as an array of objects I will be able to add or remove the users, change the values of the property for a specific user and also use all the array methods for looping through them.
 
